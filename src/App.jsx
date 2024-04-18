@@ -5,17 +5,19 @@ import Wishes from './components/Wishes'
 import Gallery from './components/Gallery'
 import Special from './components/Special'
 import Confetti from 'react-confetti'
+import { useWindowSize } from '@react-hook/window-size'
 
 function App() {
   const [show, setShow] = useState(true)
+  const {width, height} = useWindowSize()
   return (
     <>
-      {show && <Confetti width={1500} height={2500} />}
+      {show && <Confetti width={width} height={height} />}
       <Header show={show} setShow={setShow} />
       <Wishes />
-      {show && <Confetti width={1000} height={2500} />}
+      {show && <Confetti width={width} height={height} />}
       <Gallery />
-      {show && <Confetti width={1000} height={2500} />}
+      {show && <Confetti width={width} height={height} />}
       <Special />
     </>
   )

@@ -15,6 +15,7 @@ body {
   height: fit-content;
   background-color: var(--babyPink);
   overflow-x: hidden;
+  position: relative;
 }
 #root {
   width: 100%;
@@ -30,6 +31,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  padding: 2rem;
 }
 .header img {
   border-radius: 50%;
@@ -38,7 +40,7 @@ body {
 }
 .header p {
   width: 100%;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   text-align: right;
   color: black;
   font-size: 30px;
@@ -57,21 +59,21 @@ body {
   cursor: pointer;
 }
 .wishes {
+  width: fit-content;
   background-color: white;
   color: black;
   border-radius: 20px;
-  border: 3rem;
-  padding: 2rem;
-  width: 70%;
   font-style: italic;
   margin: auto;
+  padding: 1.5rem 1rem;
+  border: 2rem;
 }
 .wishes p {
   font-size: 18px;
   text-align: center;
 }
 .gallery {
-  width: 100%;
+  /* width: 100%; */
 }
 .gallery h1 {
   color: black;
@@ -111,7 +113,7 @@ body {
   height: 100%;
   object-fit: cover;
   border: 3px solid #F701B2;
-  transition: 3s ease-in-out;
+  transition: 1s ease-in-out;
   cursor: pointer;
 }
 .gallery .photo img:hover {
@@ -139,4 +141,29 @@ body {
 .special .credit {
   font-size: 14px;
   color: #F701B2;
+}
+.message {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 90%;
+  margin: 0.5rem auto;
+  border-radius: 50px;
+  padding: 1rem;
+  background-color: white;
+  overflow-y: scroll;
+}
+.message p {
+  font-size: 20px;
+}
+.message .exit {
+  text-align: right;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 1.5rem;
+  cursor: pointer;
 }
