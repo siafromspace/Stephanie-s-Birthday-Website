@@ -14,7 +14,6 @@
 }
 body {
   width: 100vw;
-  height: fit-content;
   background-color: var(--babyPink);
   overflow-x: hidden;
   position: relative;
@@ -61,7 +60,6 @@ body {
   cursor: pointer;
 }
 .wishes {
-  width: fit-content;
   background-color: white;
   color: black;
   border-radius: 20px;
