@@ -158,13 +158,17 @@ body {
   overflow-y: scroll;
 }
 .message p {
+  text-align: justify;
   font-size: 20px;
 }
 .message .exit {
-  text-align: right;
+  background-color: #EDB5E1;
+  padding: 0.5rem;
+  width: fit-content;
+  margin-left: 95%;
   font-size: 30px;
   font-weight: bolder;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
   cursor: pointer;
 }
 
